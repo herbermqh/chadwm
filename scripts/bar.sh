@@ -58,8 +58,8 @@ brightness() {
 }
 
 mem() {
-  printf "^c#7797b7^  "
-  printf "^c#7797b7^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+  printf "^c#94af7d^  "
+  printf "^c#94af7d^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
 wlan() {

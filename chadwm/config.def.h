@@ -63,7 +63,7 @@ static const char* eww[] = { "eww", "open" , "eww", NULL };
 
 static const Launcher launchers[] = {
     /* command     name to display */
-    { eww,         "" },
+    { eww,         " " },
 };
 
 static const int tagschemes[] = {
@@ -150,7 +150,8 @@ static Key keys[] = {
 
 
 
-  { M,                           XK_p,       spawn,          SHCMD("rofi -show drun") },
+  /* { M,                           XK_p,       spawn,          SHCMD("rofi -show drun") }, */
+  { M,                           XK_p,       spawn,          SHCMD("sh /home/userh/.config/rofi/launchers/misc/launcher.sh") },
   { M,                           XK_Return,  spawn,          SHCMD("alacritty")},
   // { M,                       XK_Return, spawn,            SHCMD("st_pad && st")},
 
@@ -226,7 +227,7 @@ static Key keys[] = {
   { M|S,                 XK_w,       setborderpx,    {.i = default_border } },
 
   // kill dwm
-  { M|M,               XK_q,       quit,           {0} },
+  { M|C,               XK_q,       quit,           {0} },
 
   // kill window
   { M,                           XK_q,       killclient,     {0} },
