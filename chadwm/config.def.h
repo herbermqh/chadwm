@@ -57,8 +57,6 @@ static const char *colors[][3]      = {
 /* tagging */
 static char *tags[] = {"  ", " {} ", "  ", "  ", "  "};
 
-
-
 static const char* eww[] = { "eww", "open" , "eww", NULL };
 
 static const Launcher launchers[] = {
